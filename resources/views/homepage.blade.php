@@ -7,10 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="title">title</div>
-    <div class="original-title">original-title</div>
-    <div class="nationality">nationality</div>
-    <div class="date">date</div>
-    <div class="vote">vote</div>
+    @foreach ($movies as $movie)
+        <div class="title">Title: {{$movie->title}}</div>
+        <div class="original-title">Original Title: {{$movie->original_title}}</div>
+        <div class="nationality">Nationality: {{$movie->nationality}}</div>
+        <div class="date">Date: {{$movie->date}}</div>
+        <div class="vote">Vote: {{$movie->vote}}</div>
+        <hr>
+    @endforeach
 </body>
 </html>
