@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+@extends('layouts.app')
 
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-</head>
-<body>
+@section('page_title')
+    Homepage
+@endsection
+
+@section('main_content')
     {{-- Heading --}}
     <h1>I Film più premiati</h1>
     
@@ -30,5 +26,4 @@
             </div>
         @endfor
     </div>
-</body>
-</html>
+@endsection
